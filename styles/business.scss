@@ -1,0 +1,96 @@
+.business {
+  margin-top: 55px;
+  .accordion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 20px;
+    padding: 0 5px;
+    font-size: 20px;
+    line-height: 100%;
+    h1 {
+      flex-basis: 100%;
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    &__container {
+      position: relative;
+      box-sizing: border-box;
+      flex: 1 0 50%;
+      align-content: center;
+      height: 60px;
+      padding: 0 10px;
+      max-width: 615px;
+      color: white;
+      @for $i from 1 through 6 {
+        &:nth-of-type(#{$i}) {
+          background: linear-gradient(rgba(45, 54, 83, 0.6), rgba(45, 54, 83, 0.6)),
+            top left 50% url(/images/business/#{$i}.png);
+        }
+      }
+    }
+    &__label {
+      cursor: pointer;
+      margin-right: 30px;
+    }
+    &__content {
+      position: relative;
+      height: 0;
+      font-size: 16px;
+      line-height: 140%;
+      font-weight: normal;
+      overflow: hidden;
+    }
+    &__arrow.arrow {
+      right: 5px;
+      top: 20px;
+      span {
+        background-color: white;
+      }
+    }
+    &__container--opened {
+      align-content: normal;
+      padding: 20px 10px;
+      height: 240px;
+      .accordion__arrow span:first-of-type {
+        transform: rotate(-38deg);
+      }
+      .accordion__arrow span:last-of-type {
+        transform: rotate(38deg);
+      }
+      .accordion__content {
+        margin-top: 10px;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .business {
+    margin-top: 115px;
+    .accordion {
+      gap: 22px 20px;
+      padding: 0;
+      font-size: 24px;
+      h1 {
+        font-size: 56px;
+        margin-bottom: 50px;
+      }
+      &__container {
+        align-content: normal;
+        height: 260px;
+        padding: 28px 20px;
+      }
+      &__content {
+        height: auto;
+        font-size: 17px;
+        margin-top: 20px;
+      }
+      &__arrow.arrow {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.header {
+  padding: 16px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+  &__nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 10px;
+    a {
+      color: black;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 30px 70px;
+    border: 1px solid #d9d9d9;
+    &__nav ul {
+      gap: 20px;
+    }
+  }
+}

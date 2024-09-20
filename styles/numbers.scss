@@ -1,0 +1,61 @@
+@use "variables.scss" as vars;
+
+.numbers {
+  max-width: 890px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 23px 8px;
+
+  &__number-container {
+    text-align: center;
+
+    .numbers__number {
+      display: inline-flex;
+      font-size: 40px;
+      line-height: 80%;
+      color: vars.$red;
+      &-accent {
+        margin-left: 4px;
+        margin-right: 4px;
+        font-size: 30px;
+        line-height: 100%;
+        &--font-black {
+          font-family: "Proxima Nova Black";
+        }
+      }
+    }
+
+    .numbers__text {
+      margin-top: 5px;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 150%;
+      &--line-height-120 {
+        @extend .numbers__text;
+        line-height: 120%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .numbers {
+    margin-bottom: 80px;
+    gap: 80px 180px;
+    &__number-container {
+      text-align: left;
+      .numbers__number {
+        font-size: 80px;
+        &-accent {
+          font-size: 64px;
+        }
+      }
+    }
+    .numbers__text {
+      font-size: 18px;
+    }
+  }
+}

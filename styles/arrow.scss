@@ -1,0 +1,27 @@
+@use "variables.scss" as vars;
+
+.arrow {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: inline-block;
+  position: absolute;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  & span {
+    display: inline-block;
+    width: 0.75rem;
+    height: 0.1rem;
+    position: absolute;
+    top: 0.5rem;
+    background-color: vars.$grey;
+    transition: transform 500ms;
+    &:first-of-type {
+      left: 0;
+      transform: rotate(38deg);
+    }
+    &:last-of-type {
+      right: 0;
+      transform: rotate(-38deg);
+    }
+  }
+}

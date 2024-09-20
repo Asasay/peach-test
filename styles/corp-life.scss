@@ -1,0 +1,60 @@
+@use "variables.scss" as vars;
+.corp-life {
+  max-width: 1110px;
+  margin: auto;
+  .glide__controls-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 0 5px;
+    h2 {
+      font-size: 28px;
+      line-height: 100%;
+    }
+    .glide__arrows {
+      display: none;
+      .glide__arrow {
+        border: none;
+        padding: 0;
+        margin-left: 20px;
+        border-radius: 100%;
+      }
+    }
+  }
+  .glide__slide img {
+    width: 100%;
+  }
+  .glide__bullets {
+    display: none;
+    gap: 10px;
+    margin: 28px 0;
+    .glide__bullet {
+      flex-grow: 1;
+      height: 6px;
+      border: none;
+      background-color: rgba(0, 0, 0, 0.1);
+      &--active {
+        background-color: vars.$red;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .corp-life {
+    .glide__controls-container {
+      margin-bottom: 55px;
+      padding: 0;
+      h2 {
+        font-size: 56px;
+      }
+      .glide__arrows {
+        display: block;
+      }
+    }
+    .glide__bullets {
+      display: flex;
+    }
+  }
+}

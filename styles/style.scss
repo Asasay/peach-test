@@ -1,0 +1,37 @@
+@use "reset.scss";
+@use "variables.scss" as vars;
+@use "fonts.scss";
+@use "arrow.scss";
+@use "header.scss";
+@use "banner.scss";
+@use "about.scss";
+@use "mission.scss";
+@use "numbers.scss";
+@use "map.scss";
+@use "business.scss";
+@use "benefits.scss";
+@use "corp-life.scss";
+@import "@glidejs/glide/src/assets/sass/glide.core";
+
+body {
+  min-height: 100vh;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+  font-family: "Proxima Nova";
+  font-stretch: condensed;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  color: vars.$grey;
+  a {
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
