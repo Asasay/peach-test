@@ -17,25 +17,28 @@
     &__container {
       position: relative;
       box-sizing: border-box;
-      flex: 1 0 50%;
-      align-content: center;
+      flex-grow: 1;
       height: 60px;
-      padding: 0 10px;
       max-width: 615px;
       color: white;
       @for $i from 1 through 6 {
         &:nth-of-type(#{$i}) {
-          background: linear-gradient(rgba(45, 54, 83, 0.6), rgba(45, 54, 83, 0.6)),
-            top left 50% url(/images/business/#{$i}.png);
+          background: top left 50% url(/images/business/#{$i}.png);
         }
       }
+    }
+    &__content-wrapper {
+      box-sizing: border-box;
+      height: 100%;
+      padding: 0 10px;
+      align-content: center;
+      background: rgba(45, 54, 83, 0.6);
     }
     &__label {
       cursor: pointer;
       margin-right: 30px;
     }
     &__content {
-      position: relative;
       height: 0;
       font-size: 16px;
       line-height: 140%;
@@ -50,9 +53,11 @@
       }
     }
     &__container--opened {
-      align-content: normal;
-      padding: 20px 10px;
       height: 240px;
+      .accordion__content-wrapper {
+        align-content: normal;
+        padding: 20px 10px;
+      }
       .accordion__arrow span:first-of-type {
         transform: rotate(-38deg);
       }
@@ -71,7 +76,8 @@
   .business {
     margin-top: 115px;
     .accordion {
-      gap: 22px 20px;
+      $col-gap: 20px;
+      gap: 22px $col-gap;
       padding: 0;
       font-size: 24px;
       h1 {
@@ -79,12 +85,29 @@
         margin-bottom: 50px;
       }
       &__container {
-        align-content: normal;
+        overflow: hidden;
+        flex-basis: calc(50% - $col-gap);
         height: 260px;
+        &:hover {
+          .accordion__content-wrapper {
+            transform: translateY(0px);
+          }
+          .accordion__content {
+            height: auto;
+          }
+        }
+      }
+      &__content-wrapper {
+        position: relative;
+        align-content: normal;
         padding: 28px 20px;
+        transform: translateY(180px);
+        transition: transform 500ms;
+      }
+      &__label {
+        cursor: unset;
       }
       &__content {
-        height: auto;
         font-size: 17px;
         margin-top: 20px;
       }
