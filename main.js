@@ -2,17 +2,16 @@ import Glide from "@glidejs/glide";
 
 const attachMapTabsHandler = () => {
   const mapRadios = document.querySelectorAll(".map .map__tab-input");
-  const citiesGroup = document
+  const cities = document
     .querySelector(".map .map__map-img")
-    .contentDocument.querySelector("g.map__cities");
-  const cities = citiesGroup.querySelectorAll("g[class^=map__cities-]");
+    .contentDocument.querySelectorAll("g[data-map-region]");
 
   for (let radio of mapRadios) {
     radio.addEventListener("change", function () {
-      for (const key of cities) {
-        if (key.className.baseVal !== "map__cities-" + this.value && this.value !== "all")
-          key.style.display = "none";
-        else key.style.display = "block";
+      for (const region of cities) {
+        if (region.dataset.mapRegion !== this.value && this.value !== "all")
+          region.style.display = "none";
+        else region.style.display = "block";
       }
     });
   }
