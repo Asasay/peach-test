@@ -117,188 +117,125 @@
       <g data-map-region="moscow">
         <g>
           <circle cx="145.5" cy="228.823" r="4" />
-          <text font-size="14">
-            <tspan x="124.631" y="246.177">Москва</tspan>
-          </text>
+          <text x="124.631" y="246.177" font-size="14">Москва</text>
         </g>
       </g>
       <g data-map-region="siberia">
         <g>
           <circle cx="515" cy="458.66" r="4" />
-          <text font-size="12">
-            <tspan x="483.449" y="474.392">
-              Новосибирск</tspan>
-          </text>
+          <text x="483.449" y="474.392" font-size="12"> Новосибирск</text>
         </g>
         <g>
           <circle cx="638.5" cy="460.66" r="4" />
-          <text font-size="12">
-            <tspan x="610.258" y="476.392">
-              Красноярск</tspan>
-          </text>
+          <text x="610.258" y="476.392" font-size="12"> Красноярск</text>
         </g>
         <g>
           <circle cx="694.5" cy="493.66" r="4" />
-          <text font-size="14">
-            <tspan x="672.279" y="511.014">Иркутск</tspan>
-          </text>
+          <text x="672.279" y="511.014" font-size="14">Иркутск</text>
         </g>
         <g>
-          <text font-size="14">
-            <tspan x="565.297" y="454.014">Томск</tspan>
-          </text>
+          <text x="565.297" y="454.014" font-size="14">Томск</text>
           <circle cx="581.5" cy="462.66" r="4" />
         </g>
         <g>
           <circle cx="462.5" cy="478.66" r="4" />
-          <text font-size="14">
-            <tspan x="448.434" y="496.014">Омск</tspan>
-          </text>
+          <text x="448.434" y="496.014" font-size="14">Омск</text>
         </g>
       </g>
       <g data-map-region="ural">
         <g>
           <circle cx="324.898" cy="333.099" r="4" />
-          <text font-size="12">
-            <tspan x="292.215" y="348.831">Екатеринбург</tspan>
-          </text>
+          <text x="292.215" y="348.831" font-size="12">Екатеринбург</text>
         </g>
         <g>
           <circle cx="383.5" cy="304.099" r="4" />
-          <text font-size="14">
-            <tspan x="365.455" y="321.453">Пермь</tspan>
-          </text>
+          <text x="365.455" y="321.453" font-size="14">Пермь</text>
         </g>
         <g>
           <circle cx="437" cy="316.099" r="4" />
-          <text font-size="12">
-            <tspan x="421.523" y="331.831">Сургут</tspan>
-          </text>
+          <text x="421.523" y="331.831" font-size="12">Сургут</text>
         </g>
         <g>
           <circle cx="415.5" cy="367.496" r="4" />
-          <text font-size="14">
-            <tspan x="393.996" y="384.85">Тюмень</tspan>
-          </text>
+          <text x="393.996" y="384.85" font-size="14">Тюмень</text>
         </g>
         <g>
           <circle cx="330.398" cy="294.099" r="4" />
-          <text font-size="12">
-            <tspan x="312.453" y="309.831">Ижевск</tspan>
-          </text>
+          <text x="312.453" y="309.831" font-size="12">Ижевск</text>
         </g>
         <g>
           <circle cx="322.5" cy="367.496" r="4" />
-          <text font-size="14">
-            <tspan x="292.598" y="384.85">Челябинск</tspan>
-          </text>
+          <text x="292.598" y="384.85" font-size="14">Челябинск</text>
         </g>
       </g>
       <g data-map-region="volga">
         <g>
           <circle cx="253.672" cy="303.099" r="4" />
-          <text font-size="12">
-            <tspan x="237.07" y="318.831">Казань</tspan>
-          </text>
+          <text x="237.07" y="318.831" font-size="12">Казань</text>
         </g>
         <g>
           <circle cx="191.5" cy="311.099" r="4" />
-          <text font-size="12">
-            <tspan x="173.613" y="326.831">Самара</tspan>
-          </text>
+          <text x="173.613" y="326.831" font-size="12">Самара</text>
         </g>
         <g>
           <circle cx="196.172" cy="264.961" r="4" />
-          <text font-size="12">
-            <tspan x="166.723" y="280.693">Н. Новгород</tspan>
-          </text>
+          <text x="166.723" y="280.693" font-size="12">Н. Новгород</text>
         </g>
         <g>
           <circle cx="223.672" cy="369.496" r="4" />
-          <text font-size="12">
-            <tspan x="200.941" y="385.228">Оренбург</tspan>
-          </text>
+          <text x="200.941" y="385.228" font-size="12">Оренбург</text>
         </g>
         <g>
           <circle cx="257.672" cy="341.099" r="4" />
-          <text font-size="12">
-            <tspan x="248.156" y="356.831">Уфа</tspan>
-          </text>
+          <text x="248.156" y="356.831" font-size="12">Уфа</text>
         </g>
       </g>
       <g data-map-region="south">
         <g>
           <circle cx="85.375" cy="324.099" r="4" />
-          <text font-size="14">
-            <tspan x="42.2441" y="341.453">
-              Ростов-на-Дону</tspan>
-          </text>
+          <text x="42.2441" y="341.453" font-size="14"> Ростов-на-Дону</text>
         </g>
         <g>
           <circle cx="53.875" cy="383.496" r="4" />
-          <text font-size="14">
-            <tspan x="23.6855" y="400.85">
-              Краснодар</tspan>
-          </text>
+          <text x="23.6855" y="400.85" font-size="14"> Краснодар</text>
         </g>
         <g>
           <circle cx="112.5" cy="365.496" r="4" />
-          <text font-size="12">
-            <tspan x="87.5039" y="381.228">
-              Волгоград</tspan>
-          </text>
+          <text x="87.5039" y="381.228" font-size="12"> Волгоград</text>
         </g>
       </g>
       <g data-map-region="center">
         <g>
           <circle cx="97.5" cy="250.829" r="4" />
-          <text font-size="12">
-            <tspan x="76.4453" y="266.561">Воронеж</tspan>
-          </text>
+          <text x="76.4453" y="266.561" font-size="12">Воронеж</text>
         </g>
         <g>
           <circle cx="94.5" cy="281" r="4" />
-          <text font-size="12">
-            <tspan x="71.7734" y="296.732">Белгород</tspan>
-          </text>
+          <text x="71.7734" y="296.732" font-size="12">Белгород</text>
         </g>
         <g>
           <circle cx="183" cy="201.823" r="4" />
-          <text font-size="12">
-            <tspan x="157.25" y="217.555">
-              Ярославль</tspan>
-          </text>
+          <text x="157.25" y="217.555" font-size="12"> Ярославль</text>
         </g>
       </g>
       <g data-map-region="north-west">
         <g>
           <circle cx="153.5" cy="135.599" r="4" />
-          <text font-size="16">
-            <tspan x="99.9688" y="156.575">Санкт-Петербург</tspan>
-          </text>
+          <text x="99.9688" y="156.575" font-size="16">Санкт-Петербург</text>
         </g>
         <g>
           <circle cx="42.5" cy="128.496" r="4" />
-          <text font-size="12">
-            <tspan x="11" y="146.228">
-              Калининград</tspan>
-          </text>
+          <text x="11" y="146.228" font-size="12"> Калининград</text>
         </g>
       </g>
       <g data-map-region="far-east">
         <g>
           <circle cx="975.633" cy="578.918" r="4" />
-          <text font-size="16">
-            <tspan x="934.695" y="597.894">
-              Владивосток</tspan>
-          </text>
+          <text x="934.695" y="597.894" font-size="16"> Владивосток</text>
         </g>
         <g>
           <circle cx="988.5" cy="501.66" r="4" />
-          <text font-size="16">
-            <tspan x="954.234" y="492.636">
-              Хабаровск</tspan>
-          </text>
+          <text x="954.234" y="492.636" font-size="16"> Хабаровск</text>
         </g>
       </g>
     </g>
