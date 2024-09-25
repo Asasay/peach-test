@@ -21,6 +21,7 @@
       height: 60px;
       max-width: 615px;
       color: white;
+      transition: height 500ms;
       @for $i from 1 through 6 {
         &:nth-of-type(#{$i}) {
           background: top left 50% url(/images/business/#{$i}.png);
@@ -31,15 +32,16 @@
       box-sizing: border-box;
       height: 100%;
       padding: 0 10px;
-      align-content: center;
       background: rgba(45, 54, 83, 0.6);
     }
     &__label {
       cursor: pointer;
       margin-right: 30px;
+      display: flex;
+      height: 60px;
+      align-items: center;
     }
     &__content {
-      height: 0;
       font-size: 16px;
       line-height: 140%;
       font-weight: normal;
@@ -54,19 +56,11 @@
     }
     &__container--opened {
       height: 240px;
-      .accordion__content-wrapper {
-        align-content: normal;
-        padding: 20px 10px;
-      }
-      .accordion__arrow span:first-of-type {
+      .accordion__arrow span.arrow__left-piece {
         transform: rotate(-38deg);
       }
-      .accordion__arrow span:last-of-type {
+      .accordion__arrow span.arrow__right-piece {
         transform: rotate(38deg);
-      }
-      .accordion__content {
-        margin-top: 10px;
-        height: auto;
       }
     }
   }
@@ -93,23 +87,25 @@
             transform: translateY(0px);
           }
           .accordion__content {
-            height: auto;
+            opacity: 1;
           }
         }
       }
       &__content-wrapper {
-        position: relative;
         align-content: normal;
         padding: 28px 20px;
         transform: translateY(180px);
         transition: transform 500ms;
       }
       &__label {
+        height: unset;
         cursor: unset;
       }
       &__content {
         font-size: 17px;
         margin-top: 20px;
+        opacity: 0;
+        transition: opacity 500ms;
       }
       &__arrow.arrow {
         display: none;

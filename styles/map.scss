@@ -27,10 +27,10 @@
       & .map__navbar {
         display: block;
       }
-      & .map__dropdown-arrow span:first-of-type {
+      & .map__dropdown-arrow span.arrow__left-piece {
         transform: rotate(-38deg);
       }
-      & .map__dropdown-arrow span:last-of-type {
+      & .map__dropdown-arrow span.arrow__right-piece {
         transform: rotate(38deg);
       }
     }

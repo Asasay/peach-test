@@ -2,7 +2,6 @@
 
 .arrow {
   width: 1.25rem;
-  height: 1.25rem;
   display: inline-block;
   position: absolute;
   margin: 0 0.5rem;
@@ -15,11 +14,11 @@
     top: 0.5rem;
     background-color: vars.$grey;
     transition: transform 500ms;
-    &:first-of-type {
+    &.arrow__left-piece {
       left: 0;
       transform: rotate(38deg);
     }
-    &:last-of-type {
+    &.arrow__right-piece {
       right: 0;
       transform: rotate(-38deg);
     }
