@@ -1,9 +1,8 @@
 export const attachAccordionHandlers = () => {
-  const accordion = document.querySelectorAll(".accordion__container");
-
-  for (let i = 0; i < accordion.length; i++) {
-    accordion[i].addEventListener("click", accordionHandler);
-  }
+  const accordions = document.querySelectorAll(".accordion__container");
+  accordions.forEach((accordion) => {
+    accordion.addEventListener("click", accordionHandler);
+  });
 };
 
 function accordionHandler() {

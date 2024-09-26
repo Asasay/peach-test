@@ -5,9 +5,8 @@
   padding: 40px 5px;
   margin-bottom: 60px;
   background: url("/images/banner_bg.png") center / cover;
-  h2 {
+  h1 {
     margin-bottom: 20px;
-    font-size: 28px;
     line-height: 100%;
   }
   button {
@@ -18,6 +17,7 @@
     border-radius: 8px;
     font-family: inherit;
     font-size: 16px;
+    font-stretch: condensed;
     &:hover {
       background: vars.$light-red;
     }
@@ -38,14 +38,13 @@
     padding: 158px 70px;
     margin-bottom: 100px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    h2 {
+    h1 {
       max-width: 750px;
       margin-bottom: 60px;
-      font-size: 56px;
     }
     button {
       height: 56px;
-      font-size: 18px;
+      font-size: inherit;
       line-height: 20px;
     }
   }

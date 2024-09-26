@@ -25,7 +25,15 @@ body {
   line-height: 16px;
   color: vars.$grey;
   a {
+    color: inherit;
     text-decoration: none;
+  }
+  h1 {
+    font-size: 28px;
+    line-height: 100%;
+  }
+  h2 {
+    font-size: 22px;
   }
 }
 
@@ -33,5 +41,11 @@ body {
   body {
     font-size: 18px;
     line-height: 20px;
+    h1 {
+      font-size: 56px;
+    }
+    h2 {
+      font-size: 40px;
+    }
   }
 }

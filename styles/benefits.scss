@@ -9,12 +9,9 @@
     padding: 24px 5px 20px;
   }
   &__h1 {
-    font-size: 28px;
-    line-height: 100%;
     text-align: center;
   }
   &__h2 {
-    font-size: 22px;
     line-height: 120%;
     text-align: center;
     &--strong {
@@ -52,12 +49,6 @@
 
     &__container {
       padding: 80px 78px;
-    }
-    &__h1 {
-      font-size: 56px;
-    }
-    &__h2 {
-      font-size: 40px;
     }
     &__line {
       margin: 0 30px;
