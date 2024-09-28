@@ -1,0 +1,16 @@
+mixin benefitsItems(items)
+  .benefits__items-container
+    each item, i in items
+      figure.benefits__item
+        img.benefits__item-icon(src=item.icon)
+        figcaption.benefits__item-text #{ item.text }
+
+section.benefits
+  .benefits__container
+    h1.benefits__h1 Компенсационный пакет
+    +benefitsItems([ { icon: "/images/benefits/med.svg", text: "ДМС" }, { icon: "/images/benefits/cake.svg", text: "Выходной в день рождения" }, { icon: "/images/benefits/phone.svg", text: "Корпоративная мобильная связь" }, { icon: "/images/benefits/weight.svg", text: "Корпоративные скидки на спорт" }, { icon: "/images/benefits/deal.svg", text: "LTI" } ])
+  hr.benefits__line
+  .benefits__container
+    h2.benefits__h2 Программа дополнительной мотивации
+    h2.benefits__h2--strong доплата 12% от суммы
+    +benefitsItems([ { icon: "/images/benefits/printer.svg", text: "Оргтехники" }, { icon: "/images/benefits/med.svg", text: "ДМС" }, { icon: "/images/benefits/house.svg", text: "Ипотеки" } ])

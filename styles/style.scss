@@ -2,15 +2,15 @@
 @use "variables.scss" as vars;
 @use "fonts.scss";
 @use "arrow.scss";
-@use "header.scss";
-@use "banner.scss";
-@use "about.scss";
-@use "mission.scss";
-@use "numbers.scss";
-@use "map.scss";
-@use "business.scss";
-@use "benefits.scss";
-@use "corp-life.scss";
+@use "@/sections/header/header.scss";
+@use "@/sections/banner/banner.scss";
+@use "@/sections/about/about.scss";
+@use "@/sections/mission/mission.scss";
+@use "@/sections/numbers/numbers.scss";
+@use "@/sections/map/map.scss";
+@use "@/sections/business/business.scss";
+@use "@/sections/benefits/benefits.scss";
+@use "@/sections/corp-life/corp-life.scss";
 @import "@glidejs/glide/src/assets/sass/glide.core";
 
 body {

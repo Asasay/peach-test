@@ -1,0 +1,62 @@
+mixin tabs(regions)
+  fieldset.map__tabs
+    each region in regions 
+      input.map__tab-input(
+        id="region-" + region.value,
+        type="radio",
+        value=region.value,
+        name="map-region",
+        checked=region.checked
+      )
+      label.map__tab-text(for="region-" + region.value)= region.label
+
+mixin navItemExpandable(region, cities)
+  li.map__nav-item--expandable-closed
+    p.map__nav-item-text= region
+    .triangle
+    ul.map__nav-nested-list
+      each city in cities 
+        li.map__nav-item
+          a(href=city.url)= city.name
+
+- var northWest = [{ name: "Санкт-Петербург", url: "#" },{ name: "Калининград", url: "#" }];
+- var center = [  { name: "Воронеж", url: "#" },  { name: "Ярославль", url: "#" },  { name: "Белгород", url: "#" }];
+- var northWest = [{ name: "Санкт-Петербург", url: "#" },{ name: "Калининград", url: "#" }];
+- var south = [{ name: "Ростов-на-Дону", url: "#" },{ name: "Краснодар", url: "#" },{ name: "Волгоград", url: "#" }];
+- var volga = [  { name: "Казань", url: "#" },  { name: "Самара", url: "#" },  { name: "Уфа", url: "#" },  { name: "Оренбург", url: "#" },  { name: "Нижний Новгород", url: "#" }];
+- var ural = [  { name: "Екатеринбург", url: "#" },  { name: "Челябинск", url: "#" },  { name: "Пермь", url: "#" },  { name: "Сургут", url: "#" },  { name: "Тюмень", url: "#" },  { name: "Ижевск", url: "#" }];
+- var siberia = [  { name: "Новосибирск", url: "#" },  { name: "Омск", url: "#" },  { name: "Томск", url: "#" },  { name: "Красноярск", url: "#" },  { name: "Иркутск", url: "#" }];
+- var farEast = [  { name: "Хабаровск", url: "#" },  { name: "Владивосток", url: "#" }];
+
+- var allTab = { value: "all", label: "Все", checked: true };
+- var moscowTab = { value: "moscow", label: "Москва", checked: false };
+- var centerTab = { value: "center", label: "Центр", checked: false };
+- var northWestTab = { value: "north-west", label: "Северо-Запад", checked: false };
+- var southTab = { value: "south", label: "Юг", checked: false };
+- var volgaTab = { value: "volga", label: "Волга", checked: false };
+- var uralTab = { value: "ural", label: "Урал", checked: false };
+- var siberiaTab = { value: "siberia", label: "Сибирь", checked: false };
+- var farEastTab = { value: "far-east", label: "Дальний Восток", checked: false };
+
+section.map
+  .map__menu
+    .map__dropdown--closed
+      | Офисы Softline
+      span.map__dropdown-arrow.arrow
+        span.arrow__left-piece
+        span.arrow__right-piece
+      nav.map__navbar
+        ul.map__navlist
+          li.map__nav-item
+            a(href="#") Москва
+          +navItemExpandable("Центр", center)
+          +navItemExpandable("Северо-Запад", northWest)
+          +navItemExpandable("Юг", south)
+          +navItemExpandable("Волга", volga)
+          +navItemExpandable("Урал", ural)
+          +navItemExpandable("Сибирь", siberia)
+          +navItemExpandable("Дальний Восток", farEast)
+
+    +tabs([ allTab, moscowTab, centerTab, northWestTab, southTab, volgaTab, uralTab, siberiaTab, farEastTab])
+  .map__map-container
+    object.map__map-img(type="image/svg+xml", data="./images/map.svg")

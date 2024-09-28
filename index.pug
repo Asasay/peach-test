@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="icon", type="image/svg+xml", href="/images/logo.svg")
+    link(rel="stylesheet", type="text/css", href="/styles/style.scss")
+    title Softline
+  body
+    include sections/header/header.pug
+    include sections/banner/banner.pug
+    include sections/about/about.pug
+    include sections/numbers/numbers.pug
+    include sections/map/map.pug
+    include sections/mission/mission.pug
+    include sections/business/business.pug
+    include sections/benefits/benefits.pug
+    include sections/corp-life/corp-life.pug
+  script(type="module", src="main.js")

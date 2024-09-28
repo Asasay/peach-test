@@ -1,4 +1,4 @@
-@use "variables.scss" as vars;
+@use "@/styles/variables.scss" as vars;
 .mission {
   padding: 32px 5px;
   background-color: vars.$red;
@@ -6,7 +6,9 @@
     url("/images/mission/Right\ pattern.svg");
   background-repeat: no-repeat;
   background-size: auto 80%;
-  background-position: -10% 50%, 110% 50%;
+  background-position:
+    -10% 50%,
+    110% 50%;
   color: white;
   text-align: center;
   &__h1 {
@@ -22,7 +24,9 @@
   .mission {
     margin-top: 100px;
     padding: 140px 72px;
-    background-position: 0% 50%, 100% 50%;
+    background-position:
+      0% 50%,
+      100% 50%;
     &__h1 {
       margin-bottom: 40px;
     }

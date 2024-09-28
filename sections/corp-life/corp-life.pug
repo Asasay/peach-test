@@ -1,0 +1,27 @@
+section.corp-life
+  .corp-life__glide.glide
+    .glide__controls-container
+      h1 Корпоративная жизнь
+      .glide__arrows(data-glide-el="controls")
+        button.glide__arrow.glide__arrow--left(data-glide-dir="<")
+          include arrow-left.pug
+        button.glide__arrow.glide__arrow--right(data-glide-dir=">")
+          include arrow-right.pug
+
+    .glide__track(data-glide-el="track")
+      - var n = 1;
+      ul.glide__slides
+        while n < 6
+          li.glide__slide
+            img(
+              srcset=`/images/corp-life/sm/${n}.png 280w, /images/corp-life/large/${n}.png 1110w`,
+              sizes="(max-width: 600px) 280px, 1100px",
+              src=`/images/corp-life/large/${n}.png`
+            )
+          - n++;
+
+    .glide__bullets(data-glide-el="controls[nav]")
+      - n = 0;
+      while n < 5
+        button.glide__bullet(data-glide-dir="=" + n)
+        - n++;
