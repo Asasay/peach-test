@@ -1,7 +1,7 @@
 @use "@/styles/variables.scss" as vars;
 .corp-life {
-  max-width: 1110px;
   margin: auto;
+  max-width: 1110px;
   .glide__controls-container {
     display: flex;
     justify-content: space-between;
@@ -14,10 +14,10 @@
     .glide__arrows {
       display: none;
       .glide__arrow {
-        border: none;
-        padding: 0;
         margin-left: 20px;
+        border: none;
         border-radius: 100%;
+        padding: 0;
       }
     }
   }
@@ -30,9 +30,9 @@
     margin: 28px 0;
     .glide__bullet {
       flex-grow: 1;
-      height: 6px;
       border: none;
       background-color: rgba(0, 0, 0, 0.1);
+      height: 6px;
       &--active {
         background-color: vars.$red;
       }

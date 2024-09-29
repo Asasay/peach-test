@@ -1,20 +1,20 @@
 @use "variables.scss" as vars;
 
 .arrow {
-  width: 1.25rem;
-  height: 1.25rem;
   display: inline-block;
   position: absolute;
-  margin: 0 0.5rem;
   cursor: pointer;
+  margin: 0 0.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
   & span {
     display: inline-block;
-    width: 0.75rem;
-    height: 0.1rem;
     position: absolute;
     top: 0.5rem;
-    background-color: vars.$grey;
     transition: transform 500ms;
+    background-color: vars.$grey;
+    width: 0.75rem;
+    height: 0.1rem;
     &.arrow__left-piece {
       left: 0;
       transform: rotate(38deg);

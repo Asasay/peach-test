@@ -10,17 +10,17 @@
     line-height: 100%;
     h1 {
       flex-basis: 100%;
-      text-align: center;
       margin-bottom: 10px;
+      text-align: center;
     }
     &__container {
       position: relative;
-      box-sizing: border-box;
       flex-grow: 1;
-      height: 60px;
-      max-width: 615px;
-      color: white;
       transition: height 500ms;
+      box-sizing: border-box;
+      max-width: 615px;
+      height: 60px;
+      color: white;
       @for $i from 1 through 6 {
         &:nth-of-type(#{$i}) {
           background: top left 50% url(/images/business/#{$i}.png);
@@ -29,26 +29,26 @@
     }
     &__content-wrapper {
       box-sizing: border-box;
-      height: 100%;
-      padding: 0 10px;
       background: rgba(45, 54, 83, 0.6);
+      padding: 0 10px;
+      height: 100%;
     }
     &__label {
+      display: flex;
+      align-items: center;
       cursor: pointer;
       margin-right: 30px;
-      display: flex;
       height: 60px;
-      align-items: center;
     }
     &__content {
+      overflow: hidden;
+      font-weight: normal;
       font-size: 16px;
       line-height: 140%;
-      font-weight: normal;
-      overflow: hidden;
     }
     &__arrow.arrow {
-      right: 5px;
       top: 20px;
+      right: 5px;
       span {
         background-color: white;
       }
@@ -77,9 +77,9 @@
         margin-bottom: 50px;
       }
       &__container {
-        overflow: hidden;
         flex-basis: calc(50% - $col-gap);
         height: 260px;
+        overflow: hidden;
         &:hover {
           .accordion__content-wrapper {
             transform: translateY(0px);
@@ -91,19 +91,19 @@
       }
       &__content-wrapper {
         align-content: normal;
-        padding: 28px 20px;
         transform: translateY(180px);
         transition: transform 500ms;
+        padding: 28px 20px;
       }
       &__label {
-        height: unset;
         cursor: unset;
+        height: unset;
       }
       &__content {
-        font-size: 17px;
-        margin-top: 20px;
         opacity: 0;
         transition: opacity 500ms;
+        margin-top: 20px;
+        font-size: 17px;
       }
       &__arrow.arrow {
         display: none;

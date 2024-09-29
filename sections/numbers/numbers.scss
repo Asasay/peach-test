@@ -1,25 +1,25 @@
 @use "@/styles/variables.scss" as vars;
 
 .numbers {
-  max-width: 890px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 23px 8px;
   margin: 0 auto;
   margin-bottom: 36px;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  gap: 23px 8px;
+  max-width: 890px;
 
   &__number-container {
     text-align: center;
 
     .numbers__number {
       display: inline-flex;
+      color: vars.$red;
       font-size: 40px;
       line-height: 80%;
-      color: vars.$red;
       &-accent {
-        margin-left: 4px;
         margin-right: 4px;
+        margin-left: 4px;
         font-size: 30px;
         line-height: 100%;
         &--font-black {
@@ -30,8 +30,8 @@
 
     .numbers__text {
       margin-top: 5px;
-      font-size: 16px;
       font-weight: normal;
+      font-size: 16px;
       line-height: 150%;
       &--line-height-120 {
         @extend .numbers__text;
@@ -43,8 +43,8 @@
 
 @media screen and (min-width: 1024px) {
   .numbers {
-    margin-bottom: 80px;
     gap: 80px 180px;
+    margin-bottom: 80px;
     &__number-container {
       text-align: left;
       .numbers__number {

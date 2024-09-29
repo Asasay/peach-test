@@ -14,16 +14,16 @@
 @import "@glidejs/glide/src/assets/sass/glide.core";
 
 body {
-  min-height: 100vh;
-  max-width: 1250px;
   margin: 0 auto;
   padding: 0 15px;
-  font-family: "Proxima Nova";
+  max-width: 1250px;
+  min-height: 100vh;
+  color: vars.$grey;
+  font-weight: 600;
   font-stretch: condensed;
   font-size: 14px;
-  font-weight: 600;
   line-height: 16px;
-  color: vars.$grey;
+  font-family: "Proxima Nova";
   a {
     color: inherit;
     text-decoration: none;
