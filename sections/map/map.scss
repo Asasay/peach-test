@@ -68,16 +68,18 @@
         font-weight: normal;
       }
       .map__nav-item {
-        white-space: nowrap;
+        text-wrap: nowrap;
+        .map__nav-item-text-container {
+          display: flex;
+          align-items: center;
+          gap: 3px;
+        }
         .triangle {
-          display: inline-block;
-          vertical-align: middle;
           border-width: 4px 3.5px 0 3.5px;
           border-style: solid;
           border-color: black transparent transparent transparent;
           width: 0px;
           height: 0px;
-          line-height: 120%;
         }
 
         &--expandable-closed {
@@ -98,9 +100,7 @@
         }
 
         .map__nav-item-text {
-          display: inline;
           cursor: pointer;
-          margin-right: 3px;
           text-wrap: wrap;
         }
       }
